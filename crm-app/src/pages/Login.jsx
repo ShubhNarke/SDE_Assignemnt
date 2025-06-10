@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { loginUser } from '../redux/slices/authSlice';
 
 const Login = () => {
-  const [username, setUsername] = useState('kminchelle');
-const [password, setPassword] = useState('0lelplR');
+  const [username, setUsername] = useState('');
+const [password, setPassword] = useState('');
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const error = useSelector((state) => state.auth.error);
